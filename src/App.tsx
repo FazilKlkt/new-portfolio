@@ -1,28 +1,21 @@
-import { useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ProfileSection from "./components/ProfileSection";
+import ProjectsSection from "./components/ProjectsSection";
+import ExperienceSection from "./components/ExperienceSection";
+import SkillsSection from "./components/SkillsSection";
 
-function App() {
-  const [text1, setText1] = useState("Fazil");
-  const [text2, setText2] = useState("Husen");
-
+export default function App() {
   return (
-    <>
-      <div className="flex justify-around  m-4 rounded-md outline outline-1 min-h-[7vh]">
-        <div className="self-center text-xl">{text1}</div>
-        <div className="m-3 h-10 w-10 rounded-full outline outline-1"></div>
-        <div className="self-center text-xl">{text2}</div>
-      </div>
-      <div className="flex justify-around  mx-40 rounded-md outline outline-1 min-h-[75vh]">
-        {/* <div className="self-center text-xl">{text1}</div>
-        <div className="m-3 h-10 w-10 rounded-full outline outline-1"></div>
-        <div className="self-center text-xl">{text2}</div> */}
-      </div>
-      <div className="flex justify-around  m-4 rounded-md outline outline-1 min-h-[7vh]">
-        {/* <div className="self-center text-xl">{text1}</div> */}
-        {/* <div className="m-3 h-10 w-10 rounded-full outline outline-1"></div> */}
-        {/* <div className="self-center text-xl">{text2}</div> */}
-      </div>
-    </>
+    <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
+      <Header />
+      <main className="flex-grow container mx-auto px-4 py-8">
+        <ProfileSection />
+        <ProjectsSection />
+        <ExperienceSection />
+        <SkillsSection />
+      </main>
+      <Footer />
+    </div>
   );
 }
-
-export default App;
