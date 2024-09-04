@@ -4,10 +4,10 @@ export default function SkillsSection() {
   const skills = [
     "React.js",
     "Node.js",
+    "Python",
     "JavaScript",
-    "TypeScript",
     "MongoDB",
-    "PostgreSQL",
+    "MySQL",
     "Docker",
     "Linux",
     "Git",

@@ -13,17 +13,17 @@ export default function Footer() {
           </div>
           <div className="flex space-x-6">
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/FazilKlkt"
               icon={<Github />}
               label="GitHub"
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/i-am-fazil/"
               icon={<Linkedin />}
               label="LinkedIn"
             />
             <SocialLink
-              href="mailto:fazil@example.com"
+              href="mailto:fazil.husen6@gmail.com"
               icon={<Mail />}
               label="Email"
             />

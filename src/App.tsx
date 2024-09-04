@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProfileSection from "./components/ProfileSection";
-import ProjectsSection from "./components/ProjectsSection";
+// import ProjectsSection from "./components/ProjectsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import SkillsSection from "./components/SkillsSection";
 
@@ -11,7 +11,7 @@ export default function App() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <ProfileSection />
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
         <ExperienceSection />
         <SkillsSection />
       </main>
