@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 export default function ProfileSection() {
   return (
@@ -21,12 +21,12 @@ export default function ProfileSection() {
               fazil.husen6@gmail.com
             </a>
           </div>
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <Phone className="h-5 w-5 text-gray-500 mr-3 flex-shrink-0" />
             <a href="tel:+918660809306" className="text-blue-600 hover:underline">
               +91 8660809306
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex space-x-4">
