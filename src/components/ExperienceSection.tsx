@@ -27,6 +27,7 @@ export default function ExperienceSection() {
           position="Software Engineer Intern"
           duration="2024, Jan – Apr"
           location="Bangalore, India"
+          isInternship={true}
           bullets={[
             "Developed a comprehensive monitoring and alerting system using Prometheus and Alertmanager to ensure system health and proactively identify issues.",
             "Integrated data visualization components into the web application, providing stakeholders with actionable insights through interactive graphs and charts.",
@@ -40,6 +41,7 @@ export default function ExperienceSection() {
           position="Software Engineer Intern"
           duration="2023, Jun – Jul"
           location="Manipal, India"
+          isInternship={true}
           bullets={[
             "Collaborated with the frontend team to develop responsive, mobile-first web pages using ReactJS and Bootstrap.",
             "Configured and deployed web applications on AWS EC2 instances, including domain registration and server management."
@@ -50,6 +52,7 @@ export default function ExperienceSection() {
           position="Backend Developer Intern"
           duration="2022, Feb – Apr"
           location="Remote, India"
+          isInternship={true}
           bullets={[
             "Executed a complete migration of the backend codebase from PHP/Laravel to a modern Node.js architecture, improving performance and maintainability.",
             "Implemented a multi-channel notification system by integrating third-party APIs for SMS and Email alerts."
@@ -59,3 +62,4 @@ export default function ExperienceSection() {
     </section>
   );
 }
+

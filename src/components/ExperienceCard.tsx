@@ -8,6 +8,7 @@ type ExperienceCardProps = {
   location?: string;
   description?: string;
   bullets?: string[];
+  isInternship?: boolean;
 };
 
 export default function ExperienceCard({
@@ -18,19 +19,31 @@ export default function ExperienceCard({
   location,
   description,
   bullets,
+  isInternship = false,
 }: ExperienceCardProps) {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-4">
+    <div
+      className={`rounded-lg p-4 transition-all duration-200 border ${
+        isInternship
+          ? "bg-slate-50/70 border-slate-200/80 shadow-sm"
+          : "bg-white border-gray-200 shadow-sm"
+      }`}
+    >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-        <div className="flex items-center">
+        <div className="flex items-center flex-wrap gap-2">
           {companyLink ? (
-            <a href={companyLink} target="_blank" rel="noopener noreferrer">
+            <a href={companyLink} target="_blank" rel="noopener noreferrer" className="flex items-center">
               <Briefcase className="h-5 w-5 text-gray-500 mr-2 hover:text-blue-600 transition-colors" />
             </a>
           ) : (
             <Briefcase className="h-5 w-5 text-gray-500 mr-2" />
           )}
           <h3 className="text-xl font-semibold">{company}</h3>
+          {isInternship && (
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-600 border border-blue-200">
+              Internship
+            </span>
+          )}
         </div>
         <span className="text-gray-500 text-sm mt-1 sm:mt-0">{duration}</span>
       </div>
@@ -54,3 +67,4 @@ export default function ExperienceCard({
     </div>
   );
 }
+
