@@ -24,7 +24,7 @@ export default function Header() {
             <NavItem href="#experience">Experience</NavItem>
             <NavItem href="#education">Education</NavItem>
             <NavItem href="#skills">Skills</NavItem>
-            <NavItem href="#contact">Contact</NavItem>
+            {/* <NavItem href="#contact">Contact</NavItem> */}
           </nav>
 
           <button
@@ -55,9 +55,9 @@ export default function Header() {
             <MobileNavItem href="#skills" onClick={toggleMobileMenu}>
               Skills
             </MobileNavItem>
-            <MobileNavItem href="#contact" onClick={toggleMobileMenu}>
+            {/* <MobileNavItem href="#contact" onClick={toggleMobileMenu}>
               Contact
-            </MobileNavItem>
+            </MobileNavItem> */}
           </div>
         )}
       </div>
