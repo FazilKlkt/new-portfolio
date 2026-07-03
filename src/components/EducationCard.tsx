@@ -10,10 +10,8 @@ type EducationCardProps = {
 
 export default function EducationCard({
   school,
-  degree,
   duration,
   location,
-  grade,
 }: EducationCardProps) {
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-4">
@@ -25,14 +23,6 @@ export default function EducationCard({
         <span className="text-gray-500 text-sm mt-1 sm:mt-0">{duration}</span>
       </div>
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-gray-600 text-sm">
-        {/* <div>
-          <span className="font-medium">{degree}</span>
-          {grade && (
-            <span className="ml-2 bg-blue-50 text-blue-700 text-xs font-semibold px-2 py-0.5 rounded">
-              CGPA: {grade}
-            </span>
-          )}
-        </div> */}
         <span className="flex items-center text-gray-500 mt-1 sm:mt-0">
           <MapPin className="h-4 w-4 mr-1" />
           {location}
