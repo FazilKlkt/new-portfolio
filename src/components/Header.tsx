@@ -22,6 +22,7 @@ export default function Header() {
           <nav className="hidden md:flex space-x-4">
             <NavItem href="#projects">Projects</NavItem>
             <NavItem href="#experience">Experience</NavItem>
+            <NavItem href="#education">Education</NavItem>
             <NavItem href="#skills">Skills</NavItem>
             <NavItem href="#contact">Contact</NavItem>
           </nav>
@@ -47,6 +48,9 @@ export default function Header() {
             </MobileNavItem>
             <MobileNavItem href="#experience" onClick={toggleMobileMenu}>
               Experience
+            </MobileNavItem>
+            <MobileNavItem href="#education" onClick={toggleMobileMenu}>
+              Education
             </MobileNavItem>
             <MobileNavItem href="#skills" onClick={toggleMobileMenu}>
               Skills
