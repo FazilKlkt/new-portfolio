@@ -11,7 +11,7 @@ export default function ProfileSection() {
           Always learning and contributing to the developer community.
         </p>
         <div className="flex space-x-4">
-          <a href="https://drive.google.com/uc?export=download&id=1lSMQgRGG9BBrc_kMv2sLgNiGWBmEl" target="_blank">
+          <a href="https://drive.google.com/file/d/1lSMQgRGG9BBrc_kMv2sLgNiGWBmEl-z7/view?usp=sharing" target="_blank">
             <button className="px-4 py-2 text-white bg-green-600  font-semibold rounded-md hover:bg-green-700 transition-colors">
               Download CV
             </button>
