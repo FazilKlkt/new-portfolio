@@ -1,4 +1,4 @@
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Linkedin, Github } from "lucide-react";
 
 export default function ProfileSection() {
   return (
@@ -17,16 +17,32 @@ export default function ProfileSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6 text-gray-700">
           <div className="flex items-center">
             <Mail className="h-5 w-5 text-gray-500 mr-3 flex-shrink-0" />
-            <a href="mailto:fazil.husen6@gmail.com" className="text-blue-600 hover:underline">
+            <a href="mailto:fazil.husen6@gmail.com" className="text-blue-600 hover:underline text-sm">
               fazil.husen6@gmail.com
             </a>
           </div>
-          {/* <div className="flex items-center">
-            <Phone className="h-5 w-5 text-gray-500 mr-3 flex-shrink-0" />
-            <a href="tel:+918660809306" className="text-blue-600 hover:underline">
-              +91 8660809306
+          <div className="flex items-center">
+            <Linkedin className="h-5 w-5 text-gray-500 mr-3 flex-shrink-0" />
+            <a
+              href="https://www.linkedin.com/in/fazilhusen/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline text-sm"
+            >
+              linkedin.com/in/fazilhusen
             </a>
-          </div> */}
+          </div>
+          <div className="flex items-center">
+            <Github className="h-5 w-5 text-gray-500 mr-3 flex-shrink-0" />
+            <a
+              href="https://github.com/FazilKlkt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline text-sm"
+            >
+              github.com/FazilKlkt
+            </a>
+          </div>
         </div>
 
         <div className="flex space-x-4">
@@ -44,3 +60,4 @@ export default function ProfileSection() {
     </section>
   );
 }
+

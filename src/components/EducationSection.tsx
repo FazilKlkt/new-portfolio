@@ -10,14 +10,12 @@ export default function EducationSection() {
           degree="Master of Computer Application"
           duration="2022 – 2024"
           location="Manipal, Karnataka"
-          grade="8.6"
         />
         <EducationCard
           school="Mangalore University"
           degree="Bachelor of Computer Application"
           duration="2019 – 2022"
           location="Udupi, Karnataka"
-          grade="8.1"
         />
       </div>
     </section>
