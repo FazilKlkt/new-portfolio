@@ -4,14 +4,14 @@ export default function ProfileSection() {
       <div className="bg-white border border-gray-200 rounded-lg p-6">
         <h1 className="text-3xl font-bold mb-2">Fazil Husen</h1>
         <p className="text-gray-600 mb-4">
-          Software Engineer | Fullstack Developer
+          Software Engineer | Springboot & Apigee
         </p>
         <p className="text-gray-800 mb-4">
-          Passionate about creating efficient and scalable web applications.
+          Passionate about creating efficient and scalable applications.
           Always learning and contributing to the developer community.
         </p>
         <div className="flex space-x-4">
-          <a href="https://drive.google.com/uc?export=download&id=1y0RDCbIy2raM0ExNqnfMsYdhwrFagpOx" target="_blank">
+          <a href="https://drive.google.com/uc?export=download&id=1lSMQgRGG9BBrc_kMv2sLgNiGWBmEl" target="_blank">
             <button className="px-4 py-2 text-white bg-green-600  font-semibold rounded-md hover:bg-green-700 transition-colors">
               Download CV
             </button>
