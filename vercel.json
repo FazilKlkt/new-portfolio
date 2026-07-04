@@ -2,6 +2,12 @@
   "redirects": [
     {
       "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "fazil6.vercel.app"
+        }
+      ],
       "destination": "https://fazilhusen.com/$1",
       "statusCode": 301
     }
