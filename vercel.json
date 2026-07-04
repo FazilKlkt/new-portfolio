@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://fazilhusen.com/$1",
+      "statusCode": 301
+    }
+  ]
+}
