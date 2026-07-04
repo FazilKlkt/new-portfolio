@@ -18,7 +18,7 @@ export default function Footer() {
               label="GitHub"
             />
             <SocialLink
-              href="https://www.linkedin.com/in/i-am-fazil/"
+              href="https://www.linkedin.com/in/fazilhusen/"
               icon={<Linkedin />}
               label="LinkedIn"
             />
