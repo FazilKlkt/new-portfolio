@@ -1,0 +1,152 @@
+{
+  "profile": {
+    "name": "Mohammed Fazil Husen",
+    "title": "System Engineer at Tata Consultancy Services Ltd.",
+    "location": "Hyderabad, India",
+    "email": "fazil.husen6@gmail.com",
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/fazilhusen/",
+      "display": "linkedin.com/in/fazilhusen"
+    },
+    "github": {
+      "url": "https://github.com/FazilKlkt",
+      "display": "github.com/FazilKlkt"
+    },
+    "cvLink": "https://drive.google.com/file/d/1lSMQgRGG9BBrc_kMv2sLgNiGWBmEl-z7/view?usp=sharing"
+  },
+  "header": {
+    "brandName": "Fazil",
+    "navItems": [
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Education", "href": "#education" },
+      { "label": "Skills", "href": "#skills" }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Tata Consultancy Services Ltd.",
+      "companyLink": null,
+      "position": "System Engineer",
+      "duration": "Feb 2025 – Present",
+      "location": "Hyderabad, India",
+      "isInternship": false,
+      "bullets": [
+        "Experience in API Management using Apigee, delivering secure, scalable, and high available API solutions.",
+        "Strong expertise in API security, traffic management, authentication, and enterprise integrations for telecom domain.",
+        "Hands-on experience in API lifecycle management, production support, troubleshooting, and performance optimization across UAT and Production environments.",
+        "Implemented API security using OAuth 2.0, JWT, Regular Expression and threat protection policies for secure API transactions.",
+        "Developed and maintained a centralized Access Token API used across all gateway APIs, ensuring consistency and secure OAuth authentication.",
+        "Developed reusable Shared Flows, Flow Hooks, and traffic management policies to enhance API scalability, reliability, consistency, and operational efficiency across API proxies.",
+        "Created and maintained API documentation, improving collaboration and on-boarding efficiency.",
+        "Collaborated with security teams, business stakeholders, and external partners to deliver secure, scalable API integrations across UAT and Production environments."
+      ]
+    },
+    {
+      "company": "Deepfleet Pvt Ltd.",
+      "companyLink": "https://deepfleet.com/",
+      "position": "Software Engineer Intern",
+      "duration": "2024, Jan – Apr",
+      "location": "Bangalore, India",
+      "isInternship": true,
+      "bullets": [
+        "Developed a comprehensive monitoring and alerting system using Prometheus and Alertmanager to ensure system health and proactively identify issues.",
+        "Integrated data visualization components into the web application, providing stakeholders with actionable insights through interactive graphs and charts.",
+        "Architected and built an invoice and report generation module to streamline partner billing processes.",
+        "Refined the user interface and improved the user experience."
+      ]
+    },
+    {
+      "company": "Ganglia Technologies",
+      "companyLink": "https://ganglia.in/",
+      "position": "Software Engineer Intern",
+      "duration": "2023, Jun – Jul",
+      "location": "Manipal, India",
+      "isInternship": true,
+      "bullets": [
+        "Collaborated with the frontend team to develop responsive, mobile-first web pages using ReactJS and Bootstrap.",
+        "Configured and deployed web applications on AWS EC2 instances, including domain registration and server management."
+      ]
+    },
+    {
+      "company": "Vyavsay",
+      "companyLink": null,
+      "position": "Backend Developer Intern",
+      "duration": "2022, Feb – Apr",
+      "location": "Remote, India",
+      "isInternship": true,
+      "bullets": [
+        "Executed a complete migration of the backend codebase from PHP/Laravel to a modern Node.js architecture, improving performance and maintainability.",
+        "Implemented a multi-channel notification system by integrating third-party APIs for SMS and Email alerts."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "WAN Link - File Sharing Platform",
+      "description": "A website made using ReactJS and NodeJS. Users can upload and share files seamlessly with a compact and minimalistic UI for ease of use.",
+      "technologies": ["ReactJS", "NodeJS"],
+      "projectLink": null,
+      "stars": null,
+      "forks": null
+    },
+    {
+      "name": "PetMart Website",
+      "description": "A Website made using Django and MySQL. Allows shop owners to showcase and manage pets in their shop to sell, complete with an Admin dashboard.",
+      "technologies": ["Django", "MySQL", "Python"],
+      "projectLink": null,
+      "stars": null,
+      "forks": null
+    }
+  ],
+  "skills": {
+    "programmingLanguages": ["Java", "Javascript", "Python", "SQL", "C++"],
+    "technologies": [
+      "Apigee",
+      "Linux",
+      "Springboot",
+      "NodeJS",
+      "ReactJS",
+      "NextJS",
+      "GKE",
+      "AWS",
+      "Docker",
+      "ELK",
+      "Prometheus"
+    ]
+  },
+  "education": [
+    {
+      "school": "Manipal Institute of Technology",
+      "degree": "Master of Computer Application",
+      "duration": "2022 – 2024",
+      "location": "Manipal, Karnataka"
+    },
+    {
+      "school": "Mangalore University",
+      "degree": "Bachelor of Computer Application",
+      "duration": "2019 – 2022",
+      "location": "Udupi, Karnataka"
+    }
+  ],
+  "footer": {
+    "name": "Fazil",
+    "socialLinks": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/FazilKlkt",
+        "icon": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/fazilhusen/",
+        "icon": "linkedin"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:fazil.husen6@gmail.com",
+        "icon": "mail"
+      }
+    ]
+  }
+}
