@@ -2,8 +2,14 @@ import { useState } from "react";
 import { Menu, X, Github } from "lucide-react";
 import NavItem from "./NavItem";
 import MobileNavItem from "./MobileNavItem";
+import type { NavItemData } from "../hooks/usePortfolio";
 
-export default function Header() {
+type HeaderProps = {
+  brandName: string;
+  navItems: NavItemData[];
+};
+
+export default function Header({ brandName, navItems }: HeaderProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -16,15 +22,15 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Github className="h-8 w-8 text-gray-900" />
-            <span className="ml-2 text-xl font-semibold">Fazil</span>
+            <span className="ml-2 text-xl font-semibold">{brandName}</span>
           </div>
 
           <nav className="hidden md:flex space-x-4">
-            <NavItem href="#projects">Projects</NavItem>
-            <NavItem href="#experience">Experience</NavItem>
-            <NavItem href="#education">Education</NavItem>
-            <NavItem href="#skills">Skills</NavItem>
-            {/* <NavItem href="#contact">Contact</NavItem> */}
+            {navItems.map((item) => (
+              <NavItem key={item.href} href={item.href}>
+                {item.label}
+              </NavItem>
+            ))}
           </nav>
 
           <button
@@ -43,21 +49,11 @@ export default function Header() {
 
         {isMobileMenuOpen && (
           <div className="md:hidden py-2 space-y-1">
-            <MobileNavItem href="#projects" onClick={toggleMobileMenu}>
-              Projects
-            </MobileNavItem>
-            <MobileNavItem href="#experience" onClick={toggleMobileMenu}>
-              Experience
-            </MobileNavItem>
-            <MobileNavItem href="#education" onClick={toggleMobileMenu}>
-              Education
-            </MobileNavItem>
-            <MobileNavItem href="#skills" onClick={toggleMobileMenu}>
-              Skills
-            </MobileNavItem>
-            {/* <MobileNavItem href="#contact" onClick={toggleMobileMenu}>
-              Contact
-            </MobileNavItem> */}
+            {navItems.map((item) => (
+              <MobileNavItem key={item.href} href={item.href} onClick={toggleMobileMenu}>
+                {item.label}
+              </MobileNavItem>
+            ))}
           </div>
         )}
       </div>

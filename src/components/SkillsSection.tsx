@@ -1,21 +1,11 @@
 import SkillTag from "./SkillTag";
+import type { PortfolioData } from "../hooks/usePortfolio";
 
-export default function SkillsSection() {
-  const programmingLanguages = ["Java", "Javascript", "Python", "SQL", "C++"];
-  const technologies = [
-    "Apigee",
-    "Linux",
-    "Springboot",
-    "NodeJS",
-    "ReactJS",
-    "NextJS",
-    "GKE",
-    "AWS",
-    "Docker",
-    "ELK",
-    "Prometheus",
-  ];
+type SkillsSectionProps = {
+  skills: PortfolioData["skills"];
+};
 
+export default function SkillsSection({ skills }: SkillsSectionProps) {
   return (
     <section id="skills" className="mb-8">
       <h2 className="text-2xl font-bold mb-4">Skills</h2>
@@ -23,7 +13,7 @@ export default function SkillsSection() {
         <div>
           <h3 className="text-lg font-semibold mb-3 text-gray-800">Programming Languages</h3>
           <div className="flex flex-wrap gap-3">
-            {programmingLanguages.map((skill, index) => (
+            {skills.programmingLanguages.map((skill, index) => (
               <SkillTag key={index} name={skill} />
             ))}
           </div>
@@ -31,7 +21,7 @@ export default function SkillsSection() {
         <div>
           <h3 className="text-lg font-semibold mb-3 text-gray-800">Technologies Worked On</h3>
           <div className="flex flex-wrap gap-3">
-            {technologies.map((skill, index) => (
+            {skills.technologies.map((skill, index) => (
               <SkillTag key={index} name={skill} />
             ))}
           </div>

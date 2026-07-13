@@ -1,22 +1,24 @@
 import EducationCard from "./EducationCard";
+import type { EducationData } from "../hooks/usePortfolio";
 
-export default function EducationSection() {
+type EducationSectionProps = {
+  educations: EducationData[];
+};
+
+export default function EducationSection({ educations }: EducationSectionProps) {
   return (
     <section id="education" className="mb-8">
       <h2 className="text-2xl font-bold mb-4">Education</h2>
       <div className="space-y-4">
-        <EducationCard
-          school="Manipal Institute of Technology"
-          degree="Master of Computer Application"
-          duration="2022 – 2024"
-          location="Manipal, Karnataka"
-        />
-        <EducationCard
-          school="Mangalore University"
-          degree="Bachelor of Computer Application"
-          duration="2019 – 2022"
-          location="Udupi, Karnataka"
-        />
+        {educations.map((edu, index) => (
+          <EducationCard
+            key={index}
+            school={edu.school}
+            degree={edu.degree}
+            duration={edu.duration}
+            location={edu.location}
+          />
+        ))}
       </div>
     </section>
   );
