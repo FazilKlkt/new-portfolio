@@ -1,16 +1,30 @@
 import { Github, Mail, Linkedin } from "lucide-react";
-import SocialLink from "./SocialLink";
-import type { PortfolioData } from "../hooks/usePortfolio";
+import type { PortfolioData, SocialLinkData } from "../hooks/usePortfolio";
 
 type FooterProps = {
   footer: PortfolioData["footer"];
 };
 
-const iconMap = {
+const iconMap: Record<SocialLinkData["icon"], React.ReactNode> = {
   github: <Github />,
   linkedin: <Linkedin />,
   mail: <Mail />,
 };
+
+function SocialLink({ href, icon, label }: SocialLinkData) {
+  return (
+    <a
+      href={href}
+      className="text-gray-400 hover:text-gray-600 transition-colors duration-300"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+    >
+      <span className="sr-only">{label}</span>
+      {iconMap[icon]}
+    </a>
+  );
+}
 
 export default function Footer({ footer }: FooterProps) {
   return (
@@ -24,12 +38,7 @@ export default function Footer({ footer }: FooterProps) {
           </div>
           <div className="flex space-x-6">
             {footer.socialLinks.map((link) => (
-              <SocialLink
-                key={link.label}
-                href={link.href}
-                icon={iconMap[link.icon]}
-                label={link.label}
-              />
+              <SocialLink key={link.label} {...link} />
             ))}
           </div>
         </div>

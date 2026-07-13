@@ -76,7 +76,9 @@ export function usePortfolio(): UsePortfolioResult {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/portfolio.json")
+    const controller = new AbortController();
+
+    fetch("/portfolio.json", { signal: controller.signal })
       .then((res) => {
         if (!res.ok) throw new Error(`Failed to fetch portfolio data (${res.status})`);
         return res.json();
@@ -85,11 +87,15 @@ export function usePortfolio(): UsePortfolioResult {
         setData(json);
       })
       .catch((err: Error) => {
-        setError(err.message);
+        if (err.name !== "AbortError") {
+          setError(err.message);
+        }
       })
       .finally(() => {
         setLoading(false);
       });
+
+    return () => controller.abort();
   }, []);
 
   return { data, loading, error };

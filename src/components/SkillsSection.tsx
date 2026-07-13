@@ -1,5 +1,14 @@
-import SkillTag from "./SkillTag";
+import { Code } from "lucide-react";
 import type { PortfolioData } from "../hooks/usePortfolio";
+
+function SkillTag({ name }: { name: string }) {
+  return (
+    <div className="flex items-center bg-gray-100 hover:bg-slate-200 rounded-full px-3 py-1">
+      <Code className="h-4 w-4 text-gray-500 mr-2" />
+      <span className="text-sm font-medium text-gray-700">{name}</span>
+    </div>
+  );
+}
 
 type SkillsSectionProps = {
   skills: PortfolioData["skills"];

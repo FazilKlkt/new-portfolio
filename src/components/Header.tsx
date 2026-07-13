@@ -1,13 +1,34 @@
 import { useState } from "react";
 import { Menu, X, Github } from "lucide-react";
-import NavItem from "./NavItem";
-import MobileNavItem from "./MobileNavItem";
 import type { NavItemData } from "../hooks/usePortfolio";
 
 type HeaderProps = {
   brandName: string;
   navItems: NavItemData[];
 };
+
+function NavItem({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a
+      href={href}
+      className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ease-in-out"
+    >
+      {children}
+    </a>
+  );
+}
+
+function MobileNavItem({ href, onClick, children }: { href: string; onClick: () => void; children: React.ReactNode }) {
+  return (
+    <a
+      href={href}
+      onClick={onClick}
+      className="block text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ease-in-out"
+    >
+      {children}
+    </a>
+  );
+}
 
 export default function Header({ brandName, navItems }: HeaderProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
